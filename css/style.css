@@ -72,6 +72,9 @@ body {
   font-family: "OpenSans-Regular";
   text-align: center;
 }
+.list-item:hover{
+text-decoration:underline ;
+}
 
 .header-box-title {
   font-family: "OpenSans-Bold";
@@ -184,6 +187,10 @@ body {
   line-height: 40px;
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
+}
+.box-text-ref:hover{
+  color: #b59f5b;
+  cursor: pointer;
 }
 .advertisement:before {
   content: "";
@@ -633,12 +640,16 @@ cursor: pointer;
   background-color: #b59f5b;
   border-style: none;
 
-  font-size: 14px;
+  font-size: 18px;
   line-height: 40px;
   color: #ffffff;
   font-family: "OpenSans-Bold";
 
   margin-top: 17px;
+}
+.product_button:hover{
+  background: #000000;
+  cursor: pointer;
 }
 
 /* footer */
@@ -1006,7 +1017,8 @@ h2 {
 
 
 
-@media (min-width: 641) and (max-width: 1200px)  {
+
+@media (min-width: 769) and (max-width: 1200px)  {
   .header {
     background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-bg-tablet.jpg?raw=true");
   }
@@ -1112,7 +1124,7 @@ h2 {
   .header {
     padding-left: 0;
     padding-right: 0;
-    max-width: 640px;
+    max-width: 360px;
   }
   .header-box {
     padding-left: 0;
@@ -1177,11 +1189,11 @@ h2 {
   .article {
     display: flex;
     flex-direction: column;
-    max-width: 640px;
+    max-width: 360px;
   }
   .main {
     margin-right: 0;
-    max-width: 640px;
+    max-width: 360px;
   }
   .img {
     width: 100%;
@@ -1198,7 +1210,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 640px;
+    max-width: 360px;
   }
   .widget {
     width: 100%;
@@ -1207,7 +1219,7 @@ h2 {
   }
 
   .main_aside {
-    max-width: 640px;
+    max-width: 360px;
   }
 
   .label-width80 {
