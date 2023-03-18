@@ -108,11 +108,11 @@ text-decoration:underline ;
 .caption {
   color: #000000;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   font-family: "OpenSans-Bold";
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 52px;
 }
 .article_promo {
   display: flex;
@@ -126,14 +126,10 @@ text-decoration:underline ;
 .advertisement {
   min-width: 50px;
   width: 25%;
-
   position: relative;
-
   display: flex;
-
   justify-content: space-between;
   align-items: flex-end;
-
   box-sizing: border-box;
   min-height: 350px;
   max-height: 400px;
@@ -143,21 +139,25 @@ text-decoration:underline ;
 .promo_1 {
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend1.jpg?raw=true");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo_2 {
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend2.jpg?raw=true");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo_3 {
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend3.jpg?raw=true");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo_4 {
   background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/trend4.jpg?raw=true");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box {
@@ -167,8 +167,8 @@ text-decoration:underline ;
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%;
-  z-index: 11;
+  /*width: 100%;*/
+  z-index: 3;
   padding: 20px;
 }
 
@@ -238,11 +238,15 @@ text-decoration:underline ;
   padding-top: 30px;
 }
 
+
 .img {
+  width: 380px;
+  height: 296px;
   max-width: 380px;
 }
 
 .article-texts {
+  
   margin-left: 30px;
 }
 
@@ -277,8 +281,10 @@ text-decoration:underline ;
 }
 
 .article-header {
+  margin-top: 1px;
   text-transform: uppercase;
-
+  font-weight: 700;
+  font-size: 14px;
   text-align: start;
 }
 
@@ -295,11 +301,13 @@ text-decoration:underline ;
 }
 
 .date {
+  display: block;
+  
   font-size: 12px;
 
-  color: #888888;
+  color: #000;
   font-family: "OpenSans-Regular";
-  text-transform: lowercase;
+ 
   text-align: start;
 }
 
@@ -373,10 +381,11 @@ text-decoration:underline ;
 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 14px;
+  margin-top: 5px;
 }
 
 .section_img {
+  height: 70px;
   width: 70px;
   box-sizing: border-box;
   padding-top: 3px;
@@ -486,10 +495,13 @@ cursor: pointer;
   
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;  
+  padding-left: 0; 
+   
 }
 
-
+.holder_container{
+  padding-left: 0;
+}
 .article-holder-link {
   font-size: 12px;
   font-family: "OpenSans-Bold";
@@ -506,7 +518,7 @@ cursor: pointer;
   padding: 7px 13px;
   border-width: 3px;
   border-color: #ededed;
-  border: 3px solid #eeeeee;
+  border: 2px solid #eeeeee;
   padding: 4px 13px;
   margin-right: 5px;
   margin-bottom: 6px;
@@ -552,6 +564,16 @@ cursor: pointer;
 
   text-align: center;
 }
+.text-h2{
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
 
 .section-widget {
   /*   большой блок с товарами */
@@ -581,23 +603,30 @@ cursor: pointer;
 
   border-style: solid;
   border-width: 3px;
-  margin: -20px -20px 20px -20px;
+  margin: -40px -10px 20px -10px;
   flex-grow: 1;
 }
 
 .text-widget {
   /*   блок с текстом и кнопкой */
   text-align: start;
-  padding: 0 10px 10px 10px;
+  padding: 50px 10px 10px 10px;
 }
 
 .text-h3 {
   /*   заголовок */
   font-size: 25px;
   line-height: 10px;
-  color: #0f0d0e;
   font-family: "OpenSans-Bold";
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 5px;
+
 }
+
 
 .text-p {
   /*   абзац */
@@ -623,7 +652,8 @@ cursor: pointer;
 
 .product_price {
   font-size: 20px;
-  line-height: 20px;
+ /* line-height: 20px;*/
+  font-weight: 700;
   color: #0f0d0e;
   font-family: "OpenSans-Bold";
 }
@@ -631,6 +661,10 @@ cursor: pointer;
 .product_price_old {
   display: flex;
   text-decoration: line-through;
+  font-weight: 700;
+  color: #0f0d0e;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
 }
 .product_button {
   width: 40%;
@@ -725,6 +759,7 @@ cursor: pointer;
 }
 
 .article-header-h3 {
+  margin-top: 1px;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -756,512 +791,931 @@ cursor: pointer;
 }
 
 h2 {
+  
   margin-top: 0;
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+ 
 }
 
-@media (min-width: 1201px) {
-  .advertisement:nth-child(n + 2) {
-    margin-left: 10px;
-  }
-  .widget:nth-child(n + 2) {
-    margin-left: 7%;
-  }
+
+@media(min-width:1201px){
+  .advertisement:nth-child(n+2){
+   margin-left: 10px;
 }
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .header {
-    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-bg-tablet.jpg?raw=true");
+  .widget:nth-child(n+2){
+margin-left: 7%;
+}
+  
   }
 
-  .article_promo {
+@media(min-width:641px) and (max-width:1200px){
+  
+  .header{
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-bg-tablet.jpg?raw=true");}
+  
+   .article_promo{
     display: flex;
     flex-wrap: wrap;
+    
+    
   }
-  .advertisement {
-    width: 49%;
-    margin-bottom: 1%;
-  }
-
+  .advertisement{
+  width: 49%;
+  margin-bottom: 1%;
+    
+}
+  
   .advertisement:nth-child(even) {
     margin-left: 1%;
-  }
-
-  .main_aside {
-    display: flex;
-    justify-content: center;
-  }
-
-  .article {
-    display: flex;
-    flex-direction: column;
-  }
-  .main {
-    margin-right: 50px;
-  }
-  .article-link {
-    width: 100%;
-  }
-  .img {
-    width: 100%;
-    max-width: 1200px;
-  }
-  .article-image {
-    padding-top: 0px;
-  }
-  .article-texts {
-    margin-left: 0px;
-  }
-
-  .section-widget {
-    display: flex;
-    flex-wrap: wrap;
-
-    max-width: 1200px;
-
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-
-  .widget {
-    width: 45%;
-
-    margin-bottom: 1%;
-  }
-
-  .widget:nth-child(even) {
-    margin-left: 10%;
-  }
-
-  .menu-lists {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 70px;
-  }
-
-  .list1 {
-    background-color: white;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 10px;
-  }
-
-  .list-item {
-    font-size: 0;
-    color: transparent;
-  }
-
-  .div-socials {
-    margin: auto;
-    max-width: 1200px;
-    padding: 0 15px;
-  }
-  .sidebar {
-    margin-right: 3%;
-  }
-
-  .field {
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
 }
-
-@media (max-width: 768px) {
-  .menu {
-    margin-left: 70%;
-  }
-  .header {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 768px;
-  }
-  .header-box {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-
-    text-align: right;
-  }
-
-  .logo_menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .advertisement {
-    width: 100%;
-    margin-bottom: 1%;
-  }
-  .logo {
-    order: 1;
-  }
-
-  .menu-lists {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .list1 {
-    background-color: white;
-    width: 35px;
-    height: 5px;
-    margin-bottom: 10px;
-  }
-
-  .list-item {
-    font-size: 0;
-    color: transparent;
-  }
-
-  .header-box-title {
-    font-size: 20px;
-    line-height: 50px;
-    max-width: 600px;
-    margin-top: 30px;
-  }
-
- 
-
-  .article_promo {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .main_aside {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article {
-    display: flex;
-    flex-direction: column;
-    max-width: 768px;
-  }
-  .main {
-    margin-right: 0;
-    max-width: 768px;
-  }
-  .img {
-    width: 100%;
-  }
-
-  .article-image {
-    padding-top: 0px;
-  }
-  .article-texts {
-    margin-left: 0px;
-  }
-
-  .section-widget {
-    display: flex;
-    flex-wrap: wrap;
-
-    max-width: 768px;
-  }
-  .widget {
-    width: 100%;
-
-    margin-bottom: 1%;
-  }
-
-  .main_aside {
-    max-width: 768px;
-  }
-
-  .label-width80 {
-    width: 80%;
-  }
-
-  .label-width100 {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-
-  .wide {
-    width: 100%;
-  }
-  .wide_button {
-    width: 100%;
-  }
-
-  .button {
-    width: 20%;
-  }
-
-  .element.style {
-    margin-left: 70%;
-  }
-
-  .section-widget {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-
-  .socials {
-    margin-right: 10%;
-  }
 
   
-  .field {
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  
+  
+  .main_aside{
+     display: flex;
+    justify-content:center;
+    
+   
   }
+
+.article{
+  display: flex;
+  flex-direction: column;
+  
+  
+ 
+ 
+
 }
-
-
-
-
-@media (min-width: 769) and (max-width: 1200px)  {
-  .header {
-    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-bg-tablet.jpg?raw=true");
-  }
-
-  .article_promo {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .advertisement {
-    width: 24%;
-    margin-bottom: 1%;
-  }
-
-  .advertisement:nth-child(even) {
-    margin-left: 1%;
-  }
-
-  .main_aside {
-    display: flex;
-    justify-content: center;
-  }
-
-  .article {
-    display: flex;
-    flex-direction: column;
-  }
-  .main {
+  .main{
+    
     margin-right: 50px;
+    
   }
-  .article-link {
-    width: 100%;
+  .article-link{
+     width:100%;
   }
-  .img {
-    width: 100%;
+ .img {
+   width:100%;
     max-width: 1200px;
   }
-  .article-image {
-    padding-top: 0px;
-  }
+  .article-image{
+  
+ 
+  padding-top: 0px;
+ 
+  
+} 
   .article-texts {
-    margin-left: 0px;
-  }
-
-  .section-widget {
+ 
+ margin-left: 0px; 
+ 
+ 
+  
+}
+   
+  
+  
+   .section-widget{
     display: flex;
     flex-wrap: wrap;
-
-    max-width: 1200px;
-
+    
+     max-width: 1200px;
+   
     margin-left: 8%;
     margin-right: 8%;
-  }
-
-  .widget {
-    width: 45%;
-
-    margin-bottom: 1%;
-  }
-
-  .widget:nth-child(even) {
-    margin-left: 10%;
-  }
-
-  .menu-lists {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 70px;
-  }
-
-  .list1 {
+}
+  
+ 
+  
+ 
+ 
+  .widget{
+ width: 45%;
+    
+  margin-bottom: 1%;
+}
+ 
+  .widget:nth-child(even){
+margin-left: 10%; 
+ }
+  
+   .menu-lists { 
+   display: flex;
+   flex-direction: column;
+   
+   margin-top:70px;
+   }
+ 
+   .list1{
     background-color: white;
     width: 35px;
     height: 5px;
     margin-bottom: 10px;
+   
   }
-
+  
   .list-item {
-    font-size: 0;
-    color: transparent;
-  }
-
+  font-size: 0;
+  color: transparent;
+  
+}
+   
   .div-socials {
     margin: auto;
     max-width: 1200px;
     padding: 0 15px;
-  }
-  .sidebar {
+}
+  .sidebar{
     margin-right: 3%;
   }
-  .field {
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-}
+ 
+  .field{
 
-@media (max-width: 360px) {
-  .menu {
-    margin-left: 70%;
+    border-radius: 0;
+    -webkit-appereance: none;
+    -moz-appereance: none;
+    appereance: none;
   }
-  .header {
-    padding-left: 0;
+}  
+
+
+
+
+
+@media(max-width:640px) {
+  .menu{
+    margin-left:70%;
+  }
+  .header{
+ 
+  padding-left: 0;
     padding-right: 0;
-    max-width: 360px;
+    max-width: 640px;
   }
-  .header-box {
+  .header-box{
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
-    margin-right: 0;
-
+    margin-right:0;
+    
     text-align: right;
   }
-
-  .logo_menu {
-    display: flex;
-    flex-direction: column;
+  
+  .logo_menu{
+  display: flex;
+  flex-direction: column;
+   
+    
   }
-
-  .advertisement {
-    width: 49%;
-    margin-bottom: 1%;
+  
+  .advertisement{
+    
+   width: 100%;
+    margin-bottom: 1%; 
   }
-  .logo {
-    order: 1;
-  }
+  .logo{order:1;}
 
-  .menu-lists {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .list1 {
+
+
+
+  .menu-lists { 
+   display: flex;
+   flex-direction: column;
+   
+   
+   }
+
+   .menu-list {
+    
+  
+  
+   }
+
+  .list1{
     background-color: white;
     width: 35px;
     height: 5px;
     margin-bottom: 10px;
+    
   }
-
+  
   .list-item {
-    font-size: 0;
-    color: transparent;
-  }
+  font-size: 0;
+  color: transparent;
+  
+}
 
-  .header-box-title {
-    font-size: 20px;
-    line-height: 50px;
-    max-width: 600px;
-    margin-top: 30px;
-  }
+  .header-box-title{
+  
+  font-size: 20px;
+  line-height: 50px;
+  max-width: 600px;
+  margin-top: 30px;
+    
+ 
 
-  .header {
-    background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-mobile.jpg?raw=true");
+}
+  
+  
+  
+  
+  
+  
+  
+  .header{
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-mobile.jpg?raw=true");
   }
-
-  .article_promo {
+  
+  .article_promo{
     display: flex;
     flex-wrap: wrap;
+    
+    
+  }
+  
+  
+  
+  .main_aside{
+     display: flex;
+   flex-direction: column;
+    
+   
   }
 
-  .main_aside {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article {
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
-  }
-  .main {
+.article{
+  display: flex;
+  flex-direction: column;
+max-width: 640px;
+  
+ 
+}
+  .main{
+    
     margin-right: 0;
-    max-width: 360px;
+    max-width: 640px;
+    
   }
-  .img {
-    width: 100%;
+  .img{
+  width: 100%;
   }
-
-  .article-image {
-    padding-top: 0px;
-  }
+  
+  .article-image{
+  
+ 
+  padding-top: 0px;
+ 
+  
+} 
   .article-texts {
-    margin-left: 0px;
-  }
 
-  .section-widget {
+ margin-left: 0px; 
+ 
+ 
+  
+}
+   
+  
+  
+   .section-widget{
     display: flex;
     flex-wrap: wrap;
-
-    max-width: 360px;
+    
+     max-width: 640px;
   }
-  .widget {
-    width: 100%;
-
-    margin-bottom: 1%;
+  .widget{
+ width: 100%;
+    
+  margin-bottom: 1%;
+}
+ 
+ .main_aside {
+ 
+  max-width: 640px;
+  
+}
+  
+ .label-width80{
+    width:80%;
+    
   }
-
-  .main_aside {
-    max-width: 360px;
+  
+  .label-width100{
+    width:100%;
   }
-
-  .label-width80 {
-    width: 80%;
-  }
-
-  .label-width100 {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-
-  .wide {
-    width: 100%;
-  }
-  .wide_button {
+  .sidebar{
     width: 100%;
   }
-
-  .button {
-    width: 20%;
+  
+  .wide{
+    width: 100%;
   }
-
-  .element.style {
-    margin-left: 70%;
+  .wide_button{
+     width: 100%;
   }
-
+  
+  .button{
+     width: 20%;
+  }
+  
+  .element.style{
+    margin-left:70%;
+  } 
+  
+  
+  
+ 
+  
   .section-widget {
     margin-left: 8%;
     margin-right: 8%;
-  }
-
+}
+  
   .socials {
     margin-right: 10%;
   }
-
+  
   /*   кнопки */
-  .field {
+  .field{
+
     border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    -webkit-appereance: none;
+    -moz-appereance: none;
+    appereance: none;
   }
 }
+
+
+/* горизонтально */
+
+@media(min-width:641) and (max-width:1200px) and (orientation: landscape){
+   .header{
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-bg-tablet.jpg?raw=true");}
+  
+   .article_promo{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  .advertisement{
+  width: 24%;
+  margin-bottom: 1%;
+    
+}
+  
+  .advertisement:nth-child(even) {
+    margin-left: 1%;
+}
+
+  
+  
+  
+  .main_aside{
+     display: flex;
+    justify-content:center;
+    
+   
+  }
+
+.article{
+  display: flex;
+  flex-direction: column;
+  
+  
+ 
+ 
+
+}
+  .main{
+    
+    margin-right: 50px;
+    
+  }
+  .article-link{
+     width:100%;
+  }
+ .img {
+   width:100%;
+    max-width: 1200px;
+  }
+  .article-image{
+  
+ 
+  padding-top: 0px;
+ 
+  
+} 
+  .article-texts {
+ 
+ margin-left: 0px; 
+ 
+ 
+  
+}
+   
+  
+  
+   .section-widget{
+    display: flex;
+    flex-wrap: wrap;
+    
+     max-width: 1200px;
+   
+    margin-left: 8%;
+    margin-right: 8%;
+}
+  
+ 
+  
+ 
+ 
+  .widget{
+ width: 45%;
+    
+  margin-bottom: 1%;
+}
+ 
+  .widget:nth-child(even){
+margin-left: 10%; 
+ }
+  
+   .menu-lists { 
+   display: flex;
+   flex-direction: column;
+   
+   margin-top:70px;
+   }
+ 
+   .list1{
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+   
+  }
+  
+  .list-item {
+  font-size: 0;
+  color: transparent;
+  
+}
+   
+  .div-socials {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+  .sidebar{
+    margin-right: 3%;
+  }
+  .field{
+
+    border-radius: 0;
+    -webkit-appereance: none;
+    -moz-appereance: none;
+    appereance: none;
+  }
+}
+
+@media(max-width:640px) and (orientation: landscape){
+   .menu{
+    margin-left:70%;
+  }
+  .header{
+ 
+  padding-left: 0;
+    padding-right: 0;
+    max-width: 640px;
+  }
+  .header-box{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right:0;
+    
+    text-align: right;
+  }
+  
+  .logo_menu{
+  display: flex;
+  flex-direction: column;
+   
+    
+  }
+  
+  .advertisement{
+    
+   width: 49%;
+    margin-bottom: 1%; 
+  }
+  .logo{order:1;}
+
+
+
+
+
+  .menu-lists { 
+   display: flex;
+   flex-direction: column;
+   
+   
+   }
+
+   .menu-list {
+    
+  
+  
+   }
+
+  .list1{
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .list-item {
+  font-size: 0;
+  color: transparent;
+  
+}
+
+  .header-box-title{
+  
+  font-size: 20px;
+  line-height: 50px;
+  max-width: 600px;
+  margin-top: 30px;
+    
+ 
+
+}
+  
+  
+  
+  
+  
+  
+  
+  .header{
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/img/banner-mobile.jpg?raw=true");
+  }
+  
+  .article_promo{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  
+  
+  .main_aside{
+     display: flex;
+   flex-direction: column;
+    
+   
+  }
+
+.article{
+  display: flex;
+  flex-direction: column;
+max-width: 640px;
+  
+ 
+}
+  .main{
+    
+    margin-right: 0;
+    max-width: 640px;
+    
+  }
+  .img{
+  width: 100%;
+  }
+  
+  .article-image{
+  
+ 
+  padding-top: 0px;
+ 
+  
+} 
+  .article-texts {
+
+ margin-left: 0px; 
+ 
+ 
+  
+}
+   
+  
+  
+   .section-widget{
+    display: flex;
+    flex-wrap: wrap;
+    
+     max-width: 640px;
+  }
+  .widget{
+ width: 100%;
+    
+  margin-bottom: 1%;
+}
+ 
+ .main_aside {
+ 
+  max-width: 640px;
+  
+}
+  
+ .label-width80{
+    width:80%;
+    
+  }
+  
+  .label-width100{
+    width:100%;
+  }
+  .sidebar{
+    width: 100%;
+  }
+  
+  .wide{
+    width: 100%;
+  }
+  .wide_button{
+     width: 100%;
+  }
+  
+  .button{
+     width: 20%;
+  }
+  
+  .element.style{
+    margin-left:70%;
+  } 
+  
+  
+  
+ 
+  
+  .section-widget {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+  
+  .socials {
+    margin-right: 10%;
+  }
+  
+/*   кнопки */
+  .field{
+
+    border-radius: 0;
+    -webkit-appereance: none;
+    -moz-appereance: none;
+    appereance: none;
+  }
+}
+
+
+.popup-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;
+  
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container {
+  width: 330px;
+  padding: 45px 30px 55px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.popup-title {
+  color: #0f0d0e;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+
+.popup-title::after {
+  content: '';
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+
+/* .popup-form {
+  display: flex;
+  flex-direction: column;
+} */
+
+.popup-select {
+  display: flex;
+  flex-direction: column;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4f7f6;
+  margin-bottom: 35px;
+  width: 100%;
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 25px;
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center right 15px;
+  cursor: pointer;
+}
+
+.select:focus {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #b59f5b;
+}
+
+.select-value {
+  font-size: 13px;
+  background-color: #f4f7f6;
+}
+
+
+.popup-form-title {
+  color: inherit;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.popup-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  
+}
+
+.radio-togle {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.popup-radio-text {
+  display: inline-block;
+  position: relative;
+  padding-left: 22px;
+  margin-right: 13px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 24px;
+  color: #333;
+}
+
+.popup-radio-text:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.radio-togle:checked + .popup-radio-text:before {
+  background-image: url("");
+}
+
+.radio-togle:focus + .popup-radio-text:before {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(181, 159, 91, 0.5);
+}
+
+
+.popup-recommendations-group {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.popup-textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  border: none;
+  box-sizing: border-box;
+  
+  width: 100%;
+  min-height: 132px;
+  resize: none;
+  overflow-y: auto;
+  background-color: #f4f7f6;
+  padding: 20px;
+}
+
+.popup-textarea:focus {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #b59f5b;
+}
+
+
+.popup-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #b59f5b;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}
+
+.popup-button:hover {
+  background-color: #323232;
+
+}
+
+.popup-button:focus {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #b59f5b;
+
+}
+
+.popup-close {
+  position: relative;
+  
+}
+
+.button-close {
+  width: 20px;
+  height: 20px;
+  background-size: auto;
+  
+  background-image: url("https://github.com/netology-code/mq-diploma/blob/master/sources/svg/form-x.svg");
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  
+  position: absolute;
+  right: -30px;
+  top: -75px;
+}
+
