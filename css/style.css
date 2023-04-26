@@ -131,7 +131,7 @@ text-decoration:underline ;
   justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
-  min-height: 350px;
+  min-height: 250px;
   max-height: 400px;
   
 }
@@ -173,7 +173,7 @@ text-decoration:underline ;
   margin-bottom: 10px;
   /*width: 100%;*/
   z-index: 3;
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
 .article-tag {
@@ -247,7 +247,7 @@ text-decoration:underline ;
 .img {
   display: block;
   width: 380px;
-  height: 296px;
+  /*height: 296px;*/
   max-width: 380px;
 }
 
@@ -622,7 +622,7 @@ cursor: pointer;
 .text-h3 {
   /*   заголовок */
   font-size: 25px;
-  line-height: 10px;
+  /*line-height: 10px;*/
   font-family: "OpenSans-Bold";
   color: #0f0d0e;
   text-transform: uppercase;
@@ -648,6 +648,16 @@ cursor: pointer;
 }
 .widget-link {
   text-decoration: none;
+}
+.link-text-widget-link{
+  font-family: "OpenSans-Regular";
+  color: #b59f5b;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.link-text-widget-link:hover{
+  text-decoration:underline;
 }
 
 .product-footer {
@@ -680,7 +690,7 @@ cursor: pointer;
   background-color: #b59f5b;
   border-style: none;
 
-  font-size: 18px;
+  font-size: 14px;
   line-height: 40px;
   color: #ffffff;
   font-family: "OpenSans-Bold";
@@ -752,19 +762,17 @@ cursor: pointer;
 
 .copyright {
   text-align: center;
-  
+  margin-bottom: 45px;
 }
 
-.copyright-text {
-  font-family: "Open Sans Bold";
+
+.copyright-link{
+  text-decoration: none;
+  font-family: 'OpenSans-Bold';
   font-style: normal;
   font-size: 12px;
   font-weight: 700;
   color: #999999;
-  
-}
-.cipyright-link{
-  text-decoration: none;
 }
 
 .col {
@@ -952,7 +960,7 @@ margin-left: 10%;
     border-radius: 0;
     -webkit-appereance: none;
     -moz-appereance: none;
-    appereance: none;
+   /* appereance: none;*/
   }
 }  
 
@@ -1004,11 +1012,7 @@ margin-left: 10%;
    
    }
 
-   .menu-list {
-    
   
-  
-   }
 
   .list1{
     background-color: white;
@@ -1340,11 +1344,7 @@ margin-left: 10%;
    
    }
 
-   .menu-list {
-    
-  
-  
-   }
+   
 
   .list1{
     background-color: white;
